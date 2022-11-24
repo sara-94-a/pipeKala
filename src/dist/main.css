@@ -1,0 +1,303 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+button {
+  width: auto;
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@font-face {
+  font-family: IranSans;
+  src: url(assets\IRANIANSANS.TTF);
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 11px;
+  color: #707070;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+nav > div > span {
+  margin-right: 5px;
+  color: #1D1E24;
+}
+
+#nav-left svg {
+  vertical-align: middle;
+}
+
+.search.top form {
+  text-align: center;
+  position: relative;
+}
+.search.top form svg {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+}
+.search.top form input {
+  margin: 16px;
+  width: 88.88%;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 10px;
+}
+.search.top form input:focus + svg {
+  display: none;
+}
+
+::placeholder {
+  text-align: center;
+  font-family: IranSans;
+  font-size: 0.86em;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 56px;
+  min-width: 100%;
+  background-color: white;
+  max-width: 360px;
+  justify-content: stretch;
+  align-content: stretch;
+  font-family: IranSans;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.07);
+}
+
+footer div {
+  flex-basis: 33.33%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+footer button {
+  background: inherit;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .material-symbols-rounded {
+  float: none;
+}
+
+footer button span {
+  font-size: 10px;
+  font-family: IranSans;
+  color: #707070;
+  margin-top: 3px;
+}
+
+footer .submit-order, footer .submit-order button span {
+  background-color: #1765FC;
+  color: white !important;
+}
+
+footer svg, footer .material-symbols-rounded {
+  margin-top: 3px;
+}
+
+footer .material-symbols-rounded {
+  max-height: 19px;
+}
+
+footer .cart-icon {
+  position: relative;
+}
+
+.cart-number {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #30B667;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 70%;
+  top: 1%;
+}
+
+.cart-title {
+  margin-top: 0;
+}
+
+.categories {
+  background-color: #ffffff;
+  color: #092474;
+}
+
+.categories > div.category {
+  border-bottom: 1px solid #DDDDDD;
+  position: relative;
+  padding: 0px 16px;
+}
+
+.dropdown-toggle, .title {
+  padding: 16px 0;
+}
+
+.sub-category .dropdown-toggle {
+  color: #404040;
+}
+
+.sub-category .dropdown-toggle:not(:last-child) {
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.dropdown-toggle > img {
+  vertical-align: middle;
+}
+
+.category img + .category-title {
+  padding-right: 4px;
+}
+
+.sub-category .title, .show-all, .sub-category .category-title {
+  font-size: 0.86em;
+}
+
+.category img {
+  max-width: 27px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.show-all a {
+  color: #707070;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.material-symbols-rounded {
+  float: left;
+}
+
+.sub-category {
+  display: none;
+  padding-right: 24px;
+  margin-left: 24px;
+}
+
+.sub-category .sub-category {
+  margin-left: 20px;
+  color: #404040;
+}
+
+.title {
+  color: black;
+}
+
+.isOpen {
+  background-color: #F9F9F9;
+}
+
+.selected {
+  border-bottom: none !important;
+  transition: all 1.5s ease;
+}
+
+.isOpen > .dropdown-toggle, .selected > .category-title {
+  color: #1765FC;
+}
+
+@media screen and (max-width: 360px) {
+  #big-screen {
+    display: none;
+  }
+}
+@media only screen and (min-width: 360px) {
+  header, .categories, footer {
+    display: none !important;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  #big-screen {
+    display: block;
+    padding: 20% 10%;
+  }
+}
+body {
+  direction: rtl;
+  font-family: IranSans;
+  font-size: 14px;
+  margin-bottom: 56px;
+}
+
+#big-screen {
+  text-align: center;
+  font-size: 16px;
+  color: #404040;
+}

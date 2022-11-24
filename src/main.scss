@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'nav';
+@import 'footer';
+@import 'categories';
+@import 'responsive';
+body {
+    direction: rtl;
+    font-family: IranSans;
+    font-size: 14px;
+    margin-bottom: 56px;
+}
+#big-screen {
+text-align: center;
+font-size: 16px;
+color: $darkGray;
+}

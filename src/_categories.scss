@@ -1,0 +1,74 @@
+.categories {
+    background-color: #ffffff;
+
+    color: $textBlue;
+}
+.categories > div.category {
+    border-bottom: 1px solid #DDDDDD;
+    position: relative;
+    padding: 0px 16px;
+}
+
+.dropdown-toggle, .title {
+    padding:16px 0; ;
+}
+
+.sub-category .dropdown-toggle {
+    color: $darkGray;
+    
+}
+.sub-category .dropdown-toggle:not(:last-child) {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+
+.dropdown-toggle > img{
+vertical-align: middle;
+}
+
+.category img + .category-title {
+padding-right: 4px;
+}
+
+.sub-category .title, .show-all, .sub-category .category-title {
+    font-size: 0.86em;
+}
+.category img {
+    max-width: 27px;
+    height:auto;
+    vertical-align: middle;
+}
+.show-all a {
+    color: $lighterGray;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 0;
+}
+.material-symbols-rounded {
+    float: left;
+}
+.sub-category {
+    display: none;
+    padding-right: 24px;
+    margin-left: 24px;
+}
+.sub-category .sub-category {
+    margin-left: 20px;
+    color: $darkGray;
+}
+.title {
+color: black;
+}
+
+.isOpen {
+    background-color: #F9F9F9;
+
+}
+
+.selected {
+    border-bottom: none!important;
+    transition: all 1.5s ease;
+}
+.isOpen > .dropdown-toggle, .selected > .category-title {
+    color:#1765FC;
+}
