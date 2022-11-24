@@ -4,11 +4,13 @@
     color: $textBlue;
 }
 .categories > div.category {
-    border-bottom: 1px solid #DDDDDD;
+
     position: relative;
     padding: 0px 16px;
 }
-
+.categories > div.category > .dropdown-toggle {
+    border-bottom: 1px solid #DDDDDD;
+}
 .dropdown-toggle, .title {
     padding:16px 0; ;
 }
@@ -68,6 +70,9 @@ color: black;
 .selected {
     border-bottom: none!important;
     transition: all 1.5s ease;
+}
+.isOpen > .dropdown-toggle {
+    border-bottom: none!important;
 }
 .isOpen > .dropdown-toggle, .selected > .category-title {
     color:#1765FC;
